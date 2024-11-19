@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@100..900&family=Noto+Serif+Malayalam:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sevillana&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: black;
+    min-height: 750px;
+}
+
+.mont700{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+}
+.mont400{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins500 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .poppins400 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.main_head_wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.main_head{
+    color: #fff;
+    text-align: center;
+    margin:20px 0px;
+    font-size: 80px;
+}
+.main_head_qut{
+ color: #fff;
+    text-align: center;
+    margin:20px 0px;
+    font-size: 28px;
+    padding:0% 16%;
+}
+
+.testi_bx_wrap{
+    width: 100%;
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding-top: 120px;
+    overflow: hidden;
+}
+.testi_bx_wrap .navbtn{
+    top:50%;
+    background-color: #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position:absolute;
+    border:solid 1px #fff;
+    z-index: 10;
+}
+.testi_bx_wrap .lftbtn{
+    left: 0px;
+}
+
+.testi_bx_wrap .rgtbtn{
+    right: 0px;
+}
+.testi_bx_outer{
+    width: 2100px;
+    display: inline-flex;
+    transition: all 4s ease-in-out;
+    transform: translate(-490px, 0px);
+}
+.testi_bx_inner{
+    border-radius: 30px;
+    top:0px;
+    width: 480px;
+    margin:0px 20px;
+    padding:20px;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.10);
+    border:solid 1px rgba(255, 255, 255, 0.20);
+    text-align: center;
+    display: inline-block;
+    transition: all 4s ease-in-out;
+}
+
+.testi_bx_wrap .grad{
+    position: absolute;
+    width: 20%;
+    top:0px;
+    height: 100%;
+    z-index: 5;
+   
+}
+
+.testi_bx_wrap .grad.lft{
+    left: 0px;
+    background-image: linear-gradient(to right, #000000, #feb47b00);
+}
+
+.testi_bx_wrap .grad.rgt{
+    right: 0px;
+    background-image: linear-gradient(to left, #000000, #feb47b00);
+}
+
+.testi_bx_outer.odd{
+    transform: translate(-125px, 0px);
+}
+
+.odd .testi_bx_inner:nth-child(2n+1){
+    top: -115px;
+    position: relative;
+}
+.even .testi_bx_inner:nth-child(2n){
+    top: -115px;
+    position: relative;
+}
+.testi_bx_inner .avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    display: block;
+    margin:0 auto;
+    background-color:rgba(255, 255, 255, 0.60); ;
+}
+
+.testi_bx_inner .name{
+color: rgba(255, 255, 255, 0.60);
+font-size: 18px;
+}
+
+.testi_bx_inner .content{
+color: rgba(255, 255, 255, 0.80);
+font-size: 18px;
+}
+
+.avtr1{
+    background-image: url("../images/avatar1.png");
+    background-size: cover;
+    background-position: -24px -1px;
+}
+.avtr2{
+    background-image: url("../images/avatar2.png");
+    background-size: 200%;
+    background-position: -23px -2px;
+}
+.avtr3{
+    background-image: url("../images/avatar3.png");
+    background-size: cover;
+    background-position: -24px -1px;
+}
